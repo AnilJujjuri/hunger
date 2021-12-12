@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<title>Login Page</title>
+<title>Admin Login Page</title>
 <head>  
    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
 </head> 
@@ -103,25 +103,40 @@ body {
 <body style="background-color:	#F0FFF0;">
 
 <div class="topnav" style="background-color:#FFD700;">
-  <a href="hhome"><h1>Hunger-Ping</h1></a>
+  <a href="#home"><h1>Hotel-Ping</h1></a>
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
 
 </div>
 </body>
-<div>
- <h2>Login Page</h2><br>    
+<niv>
+ <h2>Admin Login Page</h2><br>    
     <div class="login">    
-    <form action="welcome" method="post">    
-        <label> <b> User Name </b> </label>    
-        <input type="text" id="Uname" placeholder="User Name">    
-        <br><br>  
-        <label> <b> Password </b> </label>    
-        <input type="password" id="Pass" placeholder="User Name">    
-        <br><br>
-        <input type="submit" id="log" value="Log In ">       
-        <br><br> 
-    </form>
-    </div>     
-</div>
+    <form id="login" method="get" action="">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In " onclick="myFunction()">       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+         <a href="#">Forgot Password</a>    
+    </div>  
+    </form>     
+    
+      
+</niv>
+<script>
+function myFunction() {
+  location.replace("adminProfile")
+}
+</script>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </html>

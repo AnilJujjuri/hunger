@@ -1,17 +1,11 @@
 package com.ltts.controller;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.ltts.entity.Member;
 import com.ltts.entity.Restaurant;
-import com.ltts.HungerPing1Application;
 import com.ltts.repository.AdminRepository;
-import com.ltts.repository.LoginRepository;
 import com.ltts.repository.RestaurantRepository;
 import com.ltts.repository.UserRepository;
 
@@ -29,6 +23,10 @@ public class HomeController {
 	@RequestMapping("/home")
 	public String home() {
 		return "home";
+	}
+	@RequestMapping("/adminlogin")
+	public String adminlogin() {
+		return "adminlogin";
 	}
 	@RequestMapping("/regsuc")
 	public String regsuc() {
@@ -59,6 +57,19 @@ public class HomeController {
 	public String addrestaurant() {
 		return "addrestaurant";
 	}
+	@RequestMapping("/welcome")
+	public String welcome() {
+		return "welcome";
+	}
+	@RequestMapping("/addToCart")
+	public String addToCart() {
+		return "addToCart";
+	}
+	@RequestMapping("/cart")
+	public String cart() {
+		return "Cart";
+	}
+	
 	
 	@RequestMapping(value = "insertrestaurant", method = RequestMethod.POST)
 	public String insertrestaurant(HttpServletRequest session) {

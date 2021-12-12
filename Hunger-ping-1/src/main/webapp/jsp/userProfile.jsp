@@ -78,7 +78,7 @@ body {
   <i style='font-size:24px' class='fas'>&#xf56b;</i>
 </div>
 <div class="topnav" align="right">
-  <a href="checkAvailability"> View Availability </a>
+  <a href="welcome"> View Availability </a>
   <a href="book"> Book Rooms </a>
   <a href="feedback"> Feedback </a>
   <a href="logout"> Log Out </a>
