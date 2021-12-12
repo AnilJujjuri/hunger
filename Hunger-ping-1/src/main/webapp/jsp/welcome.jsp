@@ -82,7 +82,7 @@
       <ul class="nav navbar-nav navbar-right">
        <li><a href="feedback"><h4><span class="glyphicon glyphicon-user"></span> feedback</h4></a></li>
        <li><a href="cart"><h4><span class="glyphicon glyphicon-shopping-cart"></span> Cart</h4></a></li>
-      	<li><a href="index"><h4><span class="glyphicon glyphicon-user"></span> Log Out</h4></a></li> 
+      	<li><a href="/"><h4><span class="glyphicon glyphicon-user"></span> Log Out</h4></a></li> 
        
       </ul>
     </div>

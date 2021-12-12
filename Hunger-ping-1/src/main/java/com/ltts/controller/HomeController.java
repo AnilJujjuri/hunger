@@ -19,6 +19,10 @@ public class HomeController {
 	public String index() {
 		return "index";
 	}
+	@RequestMapping("/feedback")
+	public String feedback() {
+		return "feedback";
+	}
 	
 	@RequestMapping("/home")
 	public String home() {
